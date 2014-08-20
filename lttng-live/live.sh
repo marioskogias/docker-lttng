@@ -1,7 +1,6 @@
 #!/bin/bash
 
-server="snf-204430.vm.okeanos.grnet.gr"
-port=9410
+source /etc/lttng-live/zipkin.conf
 
 #fix pipe
 pipe_file="/var/run/babeltrace-pipe"

@@ -10,7 +10,7 @@ RUN (cd userspace-rcu; ./bootstrap ; ./configure ; make ; make install ; ldconfi
 RUN git clone git://git.lttng.org/lttng-ust.git
 RUN (cd lttng-ust; ./bootstrap ; ./configure ; make ; make install ; ldconfig; cd ..)
 RUN git clone git://git.lttng.org/lttng-tools.git
-RUN (cd lttng-tools; git reset --hard 40fc532 ; ./bootstrap ; ./configure ; make ; make install ; ldconfig; cd ..)
+RUN (cd lttng-tools; ./bootstrap ; ./configure ; make ; make install ; ldconfig; cd ..)
 
 RUN git clone -b zipkin-live https://github.com/marioskogias/babeltrace
 RUN (cd babeltrace; ./bootstrap ; ./configure ; make ; make install ; ldconfig; cd ..)
