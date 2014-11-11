@@ -17,8 +17,9 @@ In order to run the image:
 cd deploy; ./deploy.sh
 ```
 
-You can specify the zipkin instance ip/url and the listening port from the
-params/zipkin.conf file before deploying the image.
+In order to run the image you should configure the ip and the port that the
+Zipkin collector can be found. To do that set the server and the port number in
+deploy/params/zipkin.conf before deploying the image. 
 
 The container exports ports 5342, 5343 and 5344 to the host machine.
 
